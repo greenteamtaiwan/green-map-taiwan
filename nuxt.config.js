@@ -51,7 +51,8 @@ module.exports = {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    'bootstrap-vue/nuxt'
   ],
   /*
   ** Axios module configuration
@@ -78,5 +79,8 @@ module.exports = {
     extend(config, ctx) {
 
     }
+  },
+  router: {
+    base: './'
   }
 }
